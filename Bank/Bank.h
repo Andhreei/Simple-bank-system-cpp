@@ -4,6 +4,8 @@ class Bank
 {
 	public:
 		void openAccount();
+		void closeAccount();
+		void closeAllAccounts();
 		void showAccounts();
 		void saveAccountsToFile(const std::string& filename);
 		void loadAccountsFromFile(const std::string& filename);

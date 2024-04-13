@@ -25,8 +25,9 @@ void showMenu()
 	std::cout << "3. Deposit" << std::endl;
 	std::cout << "4. Withdrawal" << std::endl;
 	std::cout << "5. Close an account" << std::endl;
-	std::cout << "6. Show all accounts" << std::endl;
-	std::cout << "7. Quit" << std::endl;
+	std::cout << "6. Close all accounts" << std::endl;
+	std::cout << "7. Show all accounts" << std::endl;
+	std::cout << "8. Quit" << std::endl;
 }
 
 void getUserOption(int option)
@@ -42,15 +43,17 @@ void getUserOption(int option)
 			break;
 		case 4:
 			break;
-		case 5: 
+		case 5:
+			sbank->closeAccount();
 			break;
 		case 6:
-			sbank->showAccounts();
+			sbank->closeAllAccounts();
 			break;
-		case 7: 
-			std::cout << "Bye" << std::endl;
+		case 7:
+			sbank->showAccounts();	
 			break;
 		default:
+			std::cout << "Bye" << std::endl;
 			break;
 	}
 }
