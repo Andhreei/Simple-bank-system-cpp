@@ -60,6 +60,7 @@ std::string Account::getLastName()
 	return this->lastName;
 }
 
+/* Operator overloading for file output */
 std::ostream& operator<<(std::ostream& out,const Account& account)
 {
 	out << account.firstName << std::endl;

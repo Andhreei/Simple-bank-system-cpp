@@ -37,11 +37,14 @@ void getUserOption(int option)
 		case 1:
 			sbank->openAccount();
 			break;
-		case 2: 
+		case 2:
+			sbank->enqBalance();
 			break;
-		case 3: 
+		case 3:
+			sbank->deposit();
 			break;
 		case 4:
+			sbank->withdraw();
 			break;
 		case 5:
 			sbank->closeAccount();
